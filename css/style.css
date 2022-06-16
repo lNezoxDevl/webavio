@@ -1,0 +1,299 @@
+
+
+
+
+body{
+	font-family: "Poppins" ,sans-serif;
+
+}
+.container{
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+
+
+/* header */
+.header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index:1;
+
+}
+.header__row {
+	min-height: 80px;
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+}
+.header__logo {
+}
+.header__burger {
+}
+
+@media(max-width: 360px){
+	.header__row{
+		flex-direction: column;
+	}
+}
+/* /header */
+
+
+/* hero */
+.hero {
+	position: relative;
+	background: url(../img/content/hero-bg.jpg) center no-repeat;
+	background-size: cover;
+
+	
+}
+
+.hero__info {
+	height: 100vh;
+	max-width: 600px;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.hero__subtitle {
+	font-size: 14px;
+	line-height: 21px;
+	margin-bottom: 22px;
+}
+.hero__title {
+	font-size: 60px;
+	line-height: 74px;
+	margin-bottom: 24px;
+}
+.hero__text {
+	font-size: 16px;
+	line-height: 26px;
+	margin-bottom: 45px;
+}
+.hero__btn {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 700;
+	color: #fff;
+	transition: all .4s linear;
+}
+.hero__btn:hover{
+	color: #ffd723;
+	text-decoration: underline;
+}
+@media(max-width: 700px){
+	.hero__subtitle {
+		font-size: 11px;
+		line-height: 15px;
+		margin-bottom: 10px;
+	}
+	.hero__title {
+		font-size: 40px;
+		line-height: 45px;
+		margin-bottom: 15px;
+	}
+	.hero__text {
+		font-size: 12px;
+		line-height: 18px;
+		margin-bottom: 20px;
+	}
+}
+/* /hero */
+
+
+/* services */
+.services {
+	background-color: #f2f2f2;
+	padding: 150px 0 325px 0;
+}
+
+.services__title {
+	font-size: 36px;
+	line-height: 46px;
+	font-weight: 700;
+	color: #4d533c;
+	max-width: 610px;
+	margin-bottom: 60px;
+}
+.services__row {
+	display: flex;
+	margin: 0 -15px;
+}
+.services__item {
+	flex: 0 1 25%;
+
+}
+.item-services {
+	padding: 0 15px;
+}
+.services__card{
+	padding: 27px 30px 35px; 
+
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.item-services__title {
+	font-size: 24px;
+	line-height: 34px;
+	font-weight: 500;
+	margin-bottom: 20px;
+	color:#4D533C;
+}
+.item-services__text {
+	font-size: 14px;
+	line-height: 26px;
+	color: #213842;
+	margin-bottom: 30px;
+	flex: 1 1 auto;
+}
+.item-services__btn {
+	font-size: 16px;
+	line-height: 24px;
+	color: #D4D6D4;
+}
+.item-services__btn:hover{
+	color: #FFD723;
+	text-decoration: underline;
+}
+@media(max-width:996px){
+	.services__row{
+		flex-wrap: wrap;
+	}
+	.services__item{
+		flex: 0 1 50%;
+	}
+	.services{
+		padding: 70px 0 155px 0;
+	}
+}
+@media(max-width: 700px){
+	.services__item{
+		flex: 0 1 100%;
+	}
+	.services{
+		padding: 30px 0 100px 0;
+	}
+}
+/* /services */
+
+
+/* amazing */
+.amazing {
+	background: #FAFAFA;
+	box-shadow: 50px 130px 100px rgba(0, 0, 0, 0.145947);
+	padding: 70px 0;
+	width: 80%;
+	position: absolute;
+	top: -170px;
+
+}
+.amazing__text {
+	font-size: 60px;
+	line-height: 74px;
+	font-weight: 700;
+	color: #4d533c;
+	max-width: 822px;
+	margin-bottom: 50px;
+	margin-left: 380px;
+}
+.amazing__btn {
+	color: #D4D6D4;
+	font-size: 16px;
+	line-height: 24px;
+	text-transform: uppercase;
+	transition: all .4s linear;
+	margin-left: 390px;
+}
+.amazing__btn:hover{
+	color: #FFD723;
+	text-decoration: underline;
+}
+/* /amazing */
+
+.footer{
+	position: relative;
+	background: #4F553D  url(../img/content/footer-bg.png) bottom no-repeat; 
+	padding: 250px 0 30px 0px;
+}
+.footer__seperator{
+	width: 100%;
+	height: 1px;
+	background-color: #5D6544;
+}
+
+.footer__contacts {
+	margin-bottom: 50px;
+}
+.contacts-footer {
+	display: flex;
+}
+.contacts-footer__item {
+}
+.contacts-footer__item:not(:last-child){
+	margin-right: 128px;
+}
+.contacts-footer__descr {
+	font-size: 16px;
+	line-height: 40px;
+	color: #B6C197;
+	margin-bottom: 10px;
+}
+.contacts-footer__info {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 40px;
+	color: #fff;
+}
+.contacts-footer__adress {
+}
+.contacts-footer__adress-name {
+}
+.footer__nav {
+	margin-top: 50px;
+}
+.nav-footer {
+}
+.nav-footer__item {
+}
+.nav-footer__title {
+}
+.nav-footer__list {
+}
+.nav-footer__link {
+}
+.nav-footer__social {
+}
+.nav-footer__text {
+}
+.nav-footer__social-items {
+}
+.nav-footer__social-facebook {
+}
+.fa-brands {
+}
+.fa-facebook-f {
+}
+.nav-footer__social-twitter {
+}
+.fa-twitter {
+}
+.nav-footer__social-google {
+}
+.fa-google-plus-g {
+}
+.nav-footer__social-instagram {
+}
+.fa-linkedin-in {
+}
+.footer__copy {
+}
+.footer__logo {
+}
+.footer__text {
+}
